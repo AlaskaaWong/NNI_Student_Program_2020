@@ -1,0 +1,15 @@
+{
+    "initial_lr":{"_type":"choice", "_value":[0.1, 0.01, 0.001, 0.0001]},
+    "ending_lr":{"_type":"choice", "_value":[0]},
+    "weight_decay":{"_type":"choice", "_value":[5e-4, 4e-4, 3e-4, 2e-4]},
+    "cutout":{"_type":"choice", "_value":[0]},
+    "batch_size":{"_type":"choice", "_value":[128]},
+    "epochs":{"_type":"choice", "_value":[10]},
+    "momentum":{"_type":"choice", "_value":[0.9, 1.0]},
+    "num_workers":{"_type":"choice", "_value":[2]},
+    "seed":{"_type":"choice", "_value":[42, 50, 37]},
+    "grad_clip":{"_type":"choice", "_value":[0]},
+    "log_frequency":{"_type":"choice", "_value":[20]},
+    "optimizer":{"_type":"choice", "_value":["sgd","rmsprop","adam"]},
+    "model":{"_type":"choice", "_value":["resnet18","resnet50","vgg16","vgg16_bn","densenet121","squeezenet1_1"]}
+}
